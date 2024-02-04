@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Nexa';
+  @apply text-default-text;
+}
+
+h1{
+  font-family: 'Nexa';
+  @apply font-bold;
+}
+
+a{
+  @apply underline text-dark-text transition;
+}
+
+a:hover{
+  @apply text-accent-text;
+}
+
+body{
+  @apply bg-default-bg;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('./assets/fonts/NexaRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('./assets/fonts/NexaBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

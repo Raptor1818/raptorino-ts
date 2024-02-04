@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+//import { useState } from 'react'
+import css from './App.module.css'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
-      <div className='w-full mt-16'>
-        <h1 className='text-center text-5xl'>WIP in the <b>dev</b> branch</h1>
-      </div>
+      <main className={css.mainContainer}>
+        <Navbar></Navbar>
+      </main>
     </>
   )
 }

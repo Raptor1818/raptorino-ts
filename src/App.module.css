@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer{
+  @apply flex flex-col mx-auto min-h-screen; 
+}
