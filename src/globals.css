@@ -45,6 +45,13 @@ body{
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nexa';
+  src: url('./assets/fonts/NexaHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Nexa';
