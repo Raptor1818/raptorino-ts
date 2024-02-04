@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar{
-  @apply top-0 right-0 left-0 z-10 fixed border-b p-8 border-default-border flex flex-row justify-between items-center;
+  @apply top-0 right-0 left-0 z-10 fixed border-b p-8 border-default-border flex flex-row justify-between items-center; /*bg-default-bg opacity-100;*/
 }
 
 .logoTitle{

@@ -26,6 +26,13 @@ body{
 
 @font-face {
   font-family: 'Nexa';
+  src: url('./assets/fonts/NexaLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
   src: url('./assets/fonts/NexaRegular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -38,9 +45,10 @@ body{
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'Nexa';
-  src: url('./assets/fonts/NexaLight.woff2') format('woff2');
-  font-weight: 200;
+  src: url('./assets/fonts/NexaBlack.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
 }

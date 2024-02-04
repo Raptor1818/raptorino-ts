@@ -6,7 +6,9 @@ const Footer = () => {
 
   return (
     <footer className={css.footer}>
-      <p>{currentYear} | All rights reserved.</p>
+      <div className={css.homeTitleContainer}>
+        <p>{currentYear} | All rights reserved.</p>
+      </div>
     </footer>
   )
 }
