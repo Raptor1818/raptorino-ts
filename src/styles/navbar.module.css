@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .navbar{
-  @apply top-0 right-0 left-0 z-10 fixed border-b p-8 border-default-border flex flex-row justify-between items-center; /*bg-default-bg opacity-100;*/
+  @apply top-0 right-0 left-0 z-10 fixed border-b p-5 border-default-border flex flex-row justify-between items-center; /*bg-default-bg opacity-100;*/
 }
 
 .logoTitle{
-  @apply text-4xl;
+  @apply text-xl md:text-2xl;
 }
 
 .navLinks{
-  @apply flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 text-xl;
+  @apply flex md:flex-row space-x-2 md:space-x-8 mt-0 md:text-lg;
 }

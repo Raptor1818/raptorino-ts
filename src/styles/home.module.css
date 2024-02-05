@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 .homeContainer{
-  @apply min-h-screen pt-28;
+  @apply min-h-screen pt-24;
 }
 
 .homeTitle{
-  @apply text-transparent bg-clip-text bg-gradient-to-r font-black from-accent-from to-accent-to w-fit h-fit text-6xl;
+  @apply text-transparent bg-clip-text bg-gradient-to-r font-black from-accent-from to-accent-to w-fit h-fit text-5xl md:text-6xl;
 }
 
 .homeTitleTwo{
-  @apply text-5xl font-[800];
+  @apply text-4xl md:text-5xl font-[800];
 }
 
 .homeTitleContainer{
-  @apply pl-6;
+  @apply ml-2 md:pl-6;
 }
 
 .hobbyTitleContainer{
-  @apply flex flex-row justify-between items-center text-5xl gap-16 mt-16;
+  @apply flex flex-row justify-between items-center text-4xl md:text-5xl gap-16 mt-16;
 }
 
 .hobbyTitleContainer h1{
-  @apply transition;
+  @apply transition text-center;
 }
 
 .hobbyTitleContainer h1:hover{
