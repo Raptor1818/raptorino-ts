@@ -4,6 +4,9 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
+const rotationX: number = 15
+const rotationY: number = 25
+
 const StarBackground = (props: any) => {
   const ref: any = useRef();
   const [sphere] = useState(() =>
@@ -11,8 +14,8 @@ const StarBackground = (props: any) => {
   );
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta/10;
-    ref.current.rotation.y -= delta/15;
+    ref.current.rotation.x -= delta/rotationX;
+    ref.current.rotation.y -= delta/rotationY;
   })
 
 
