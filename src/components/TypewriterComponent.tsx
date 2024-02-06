@@ -1,16 +1,32 @@
-import { Typewriter } from 'react-simple-typewriter'
-import { typewriterStrings } from '../assets/typewriterStrings'
+import Typewriter from 'typewriter-effect';
+import { useEffect, useState } from 'react';
 
-const TypewriterComponent = () => {
+type Props = {
+  stringArray: string[]
+}
+
+const TypewriterComponent = (props: Props) => {
+
+  const [shuffledStrings, setShuffledStrings] = useState([]);
+
+    useEffect(() => {
+        const shuffled = [...props.stringArray];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        setShuffledStrings(shuffled);
+    }, []);
+
   return (
     <Typewriter
-      words={typewriterStrings}
-      loop={0} // 0 means infinitely
-      typeSpeed={80}
-      deleteSpeed={60}
-      delaySpeed={2500}
-      cursor={true}
-      cursorStyle='_'
+      options={{
+        strings: shuffledStrings,
+        autoStart: true,
+        loop: true,
+        cursor: '_',
+        delay: 75
+      }}
     />
   )
 }
