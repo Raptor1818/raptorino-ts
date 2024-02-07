@@ -15,10 +15,10 @@ function Navbar({}: Props) {
         <a href="">Projects</a>
         <a href="">Links</a>
       </div>
-      <ul className={css.navSocialIcons}>
-        <li><a href="https://twitter.com/_Raptorr" target="_blank" rel="noopener noreferrer"></a><FaXTwitter  /></li>
-        <li><a href="https://github.com/Raptor1818" target="_blank" rel="noopener noreferrer"></a><FaGithub /></li>
-      </ul>
+      <div className={css.navSocialLinks}>
+        <a href="https://twitter.com/_Raptorr" target="_blank" rel="noopener noreferrer"><FaXTwitter  /></a>
+        <a href="https://github.com/Raptor1818" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+      </div>
     </nav>
   )
 }
