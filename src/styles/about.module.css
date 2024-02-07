@@ -21,3 +21,11 @@
 .aboutParagraph{
   @apply text-xl max-w-[600px];
 }
+
+.devIconsContainer{
+  @apply flex flex-row gap-4;
+}
+
+.devIcon{
+  @apply text-8xl;
+}
