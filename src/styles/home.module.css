@@ -23,7 +23,7 @@
 /* Typewriter ---------------------------------------------------------------- */
 
 .homeTypewriter{
-  @apply pt-6 text-2xl lg:text-4xl;
+  @apply pt-6 text-2xl lg:text-3xl break-words max-w-[500px];
 }
 
 .homeTypewriter span{
