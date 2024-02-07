@@ -5,7 +5,7 @@
 /* Home ---------------------------------------------------------------- */
 
 .homeContainer{
-  @apply min-h-screen pt-24;
+  @apply min-h-screen pt-24 select-none;
 }
 
 .homeTitle{
