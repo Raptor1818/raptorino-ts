@@ -5,7 +5,7 @@
 /* Home ---------------------------------------------------------------- */
 
 .homeContainer{
-  @apply min-h-screen pt-24 select-none;
+  @apply pt-32 2xl:pt-48 select-none;
 }
 
 .homeTitle{
@@ -23,7 +23,7 @@
 /* Typewriter ---------------------------------------------------------------- */
 
 .homeTypewriter{
-  @apply pt-6 text-2xl lg:text-4xl 2xl:text-5xl;
+  @apply pt-6 text-2xl lg:text-4xl;
 }
 
 .homeTypewriter span{

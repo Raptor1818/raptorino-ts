@@ -9,7 +9,7 @@ type Props = {}
 const Home = (props: Props) => {
 
   return (
-    <div className={css.homeContainer}>
+    <section className={css.homeContainer}>
       <div>
       </div>
       <div className={css.homeTitleContainer}>
@@ -21,7 +21,7 @@ const Home = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

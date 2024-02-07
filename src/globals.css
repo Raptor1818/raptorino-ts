@@ -9,7 +9,7 @@
 
 h1{
   font-family: 'Nexa';
-  @apply font-bold;
+  @apply font-[800];
 }
 
 a{
@@ -22,6 +22,10 @@ a:hover{
 
 body{
   @apply bg-default-bg;
+}
+
+section{
+  @apply min-h-screen;
 }
 
 @font-face {
