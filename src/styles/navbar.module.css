@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .navbar{
-  @apply top-0 right-0 left-0 z-50 fixed p-5 flex flex-row justify-between items-center bg-[#00000017] backdrop-blur-[2px] px-10 shadow-lg shadow-[#FF309135]; /*bg-default-bg opacity-100;*/
+  @apply top-0 right-0 left-0 z-50 fixed flex flex-row justify-between items-center backdrop-blur-sm h-16 px-10 shadow-lg shadow-[#6666EE35]; /*bg-default-bg opacity-100;*/  
 }
 
 .logoTitle{
   @apply text-xl md:text-2xl;
 }
 
-nav ul{
-  @apply space-x-2 md:space-x-8 flex flex-row mt-0 md:text-lg;
+.navSectionLinks{
+  @apply gap-12 flex flex-row justify-between top-0 text-lg items-center py-2 px-5 border-b-[1px] border-[#6666EE85] rounded-full h-fit;
+}
+
+.navSectionLinks a{
+  @apply no-underline;
 }
 
 .navSocialIcons{
-  @apply text-3xl;
-}
-
-.navSocialIcons Link {
-  @apply cursor-pointer;
+  @apply text-3xl space-x-2 md:space-x-8 flex flex-row;
 }
