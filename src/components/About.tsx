@@ -1,31 +1,62 @@
 import { ReactOriginal, JavascriptOriginal, GodotOriginalWordmark,TypescriptOriginal, ElectronOriginal, Html5Original, Css3Original, TailwindcssOriginal, BlenderOriginal } from 'devicons-react';
 
+import { IoPerson, IoCodeSlash, IoGameController } from "react-icons/io5";
+
 import css from '../styles/about.module.css'
+import Header from './Header';
 
 type Props = {}
 
 const About = (props: Props) => {
+  const devIconSize = 100
+
   return (
     <section>
       <div className={css.aboutContainer}>
         <div></div>
         <div className={css.aboutTextContainer}>
-          <h1 className={css.aboutTitle}>About me</h1>
-          <p className={css.aboutParagraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde fuga repudiandae fugiat adipisci deserunt, possimus excepturi cumque illo nobis temporibus, vero incidunt consectetur dolor ex accusantium, ipsa explicabo obcaecati.</p>
+          <Header 
+            text='About me' 
+            icon={IoPerson} />
+          <p className={css.aboutParagraph}>
+            Hi! I'm Francesco, an 18 year old guy from Italy with a passion for web and game development.</p>
+          <p className={css.aboutParagraph}>
+            I have made various webdev projects, and moving forward I will focus more on learning game development with Godot 4.</p>
+          <p className={css.aboutParagraph}><a href="#projects">
+            Check out my projects!</a></p>
         </div>
       </div>
-      <div className={css.devIconsContainer}>
-        <Html5Original size={100}/>
-        <Css3Original size={100}/>
-        <TailwindcssOriginal size={100}/>
+      <div className={css.aboutMeLangSection}>
+        <h2>Here are tools and languages I use:</h2>
+        <div className={css.aboutMeLanguages}>
+          <Header 
+            text='Web dev' 
+            icon={IoCodeSlash} />
+          <div className={css.devIconsContainer}>
+            <Html5Original size={devIconSize}/>
+            <Css3Original size={devIconSize}/>
+            <JavascriptOriginal size={devIconSize}/>
+            <TypescriptOriginal size={devIconSize}/>
+          </div>
 
-        <ReactOriginal size={100}/>
-        <JavascriptOriginal size={100}/>
-        <TypescriptOriginal size={100}/>
-        <ElectronOriginal size={100}/>
+          <div className={css.devIconsContainer}>
+            <TailwindcssOriginal size={devIconSize}/>
+            <ReactOriginal size={devIconSize}/>
+            <ElectronOriginal size={devIconSize}/>
+          </div>
 
-        <GodotOriginalWordmark size={100}/>
-        <BlenderOriginal size={100}/>
+        </div>
+
+        <div className={css.aboutMeLanguages}>
+          <Header 
+            text='Game dev' 
+            icon={IoGameController} />
+          <div className={css.devIconsContainer}>
+            <GodotOriginalWordmark size={devIconSize}/>
+            <BlenderOriginal size={devIconSize}/>
+          </div>
+        </div>
+
       </div>
     </section>
   )

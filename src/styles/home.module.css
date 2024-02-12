@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
 }
 
 .homeTitleTwo{
-  @apply font-[800];
+  @apply font-bold;
 }
 
 .homeTitleContainer{
@@ -28,6 +29,7 @@
 
 .homeTypewriter span{
   @apply text-dark-text !important;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 /* Hobby ---------------------------------------------------------------- */

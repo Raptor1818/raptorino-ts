@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 *{
-  font-family: 'Nexa';
+  font-family: 'Lexend Deca', sans-serif;
   @apply text-default-text;
 }
 
 h1{
-  font-family: 'Nexa';
-  @apply font-[800];
+  @apply font-bold;
 }
 
 a{
@@ -21,41 +21,5 @@ body{
 }
 
 section{
-  @apply min-h-screen;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('./assets/fonts/NexaLight.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('./assets/fonts/NexaRegular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('./assets/fonts/NexaBold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('./assets/fonts/NexaHeavy.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('./assets/fonts/NexaBlack.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
+  @apply min-h-screen pb-36;
 }

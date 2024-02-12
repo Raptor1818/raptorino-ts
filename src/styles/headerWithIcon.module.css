@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+  @apply flex flex-row gap-4 text-5xl;
+}
