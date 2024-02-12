@@ -11,7 +11,7 @@
 }
 
 .navSectionLinks{
-  @apply gap-12 flex flex-row justify-between top-0 text-lg items-center py-2 px-5 border-b-[1px] border-[#6666EE90] rounded-full h-fit bg-[#00000035];
+  @apply gap-12 flex flex-row justify-between top-0 text-lg items-center py-2 px-5 h-fit;
 }
 
 .navSectionLinks a{

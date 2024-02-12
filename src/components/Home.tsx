@@ -1,7 +1,7 @@
 import React from 'react'
-import css from '../styles/home.module.css'
-import TypewriterComponent from './TypewriterComponent';
-import { typewriterStrings } from '../assets/typewriterStrings';
+import css from '@/styles/home.module.css'
+import TypewriterComponent from '@/components/ui/TypewriterComponent';
+import { typewriterStrings } from '@/assets/typewriterStrings';
 
 
 type Props = {}
@@ -9,7 +9,7 @@ type Props = {}
 const Home = (props: Props) => {
 
   return (
-    <section className={css.homeContainer}>
+    <section className={css.homeContainer} id='home'>
       <div>
       </div>
       <div className={css.homeTitleContainer}>

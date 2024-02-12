@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { IconType } from 'react-icons';
 
-import css from '../styles/headerWithIcon.module.css'
+import css from '@/styles/ui/headerWithIcon.module.css'
 
 interface HeaderProps {
   text: string;

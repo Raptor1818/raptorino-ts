@@ -2,8 +2,8 @@ import { ReactOriginal, JavascriptOriginal, GodotOriginalWordmark,TypescriptOrig
 
 import { IoPerson, IoCodeSlash, IoGameController } from "react-icons/io5";
 
-import css from '../styles/about.module.css'
-import Header from './Header';
+import css from '@/styles/about.module.css'
+import Header from '@/components/ui/Header';
 
 type Props = {}
 
@@ -11,7 +11,7 @@ const About = (props: Props) => {
   const devIconSize = 100
 
   return (
-    <section>
+    <section id='about'>
       <div className={css.aboutContainer}>
         <div></div>
         <div className={css.aboutTextContainer}>

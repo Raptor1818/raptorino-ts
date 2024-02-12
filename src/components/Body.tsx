@@ -1,6 +1,7 @@
-import Home from './Home';
-import css from '../styles/body.module.css';
-import About from './About';
+import css from '@/styles/body.module.css';
+
+import Home from '@/components/Home';
+import About from '@/components/About';
 
 type Props = {}
 
