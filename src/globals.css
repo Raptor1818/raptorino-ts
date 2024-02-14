@@ -13,7 +13,7 @@ h1{
 }
 
 a{
-  @apply underline text-dark-text transition hover:text-accent-text hover:cursor-pointer;
+  @apply text-dark-text transition hover:text-accent-text hover:cursor-pointer;
 }
 
 body{

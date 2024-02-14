@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link{
+  @apply flex flex-row gap-2 text-lg items-center justify-center w-full h-fit;
+}
