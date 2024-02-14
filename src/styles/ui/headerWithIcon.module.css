@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .header{
-  @apply flex flex-row gap-4 text-5xl;
+  @apply flex flex-row gap-4 text-4xl md:text-5xl items-center;
 }

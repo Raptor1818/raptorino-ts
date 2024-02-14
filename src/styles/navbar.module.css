@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar{
-  @apply top-0 right-0 left-0 z-50 fixed flex flex-row justify-between items-center backdrop-blur-sm h-16 px-10 shadow-lg shadow-[#6666EE40]; /*bg-default-bg opacity-100;*/  
+  @apply top-0 right-0 left-0 z-50 fixed flex flex-row justify-between items-center backdrop-blur-sm h-16 w-screen px-4 md:px-10 shadow-lg shadow-[#6666EE40];
 }
 
 .logoTitle{
@@ -11,7 +11,8 @@
 }
 
 .navSectionLinks{
-  @apply gap-12 flex flex-row justify-between top-0 text-lg items-center py-2 px-5 h-fit;
+  @apply gap-12 flex-row justify-between top-0 text-lg items-center py-2 px-5 h-fit
+  hidden md:flex;
 }
 
 .navSectionLinks a{
@@ -19,5 +20,5 @@
 }
 
 .navSocialLinks{
-  @apply text-3xl gap-8 flex flex-row;
+  @apply text-3xl gap-4 md:gap-8 flex flex-row;
 }

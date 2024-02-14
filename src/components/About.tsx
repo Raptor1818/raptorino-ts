@@ -4,11 +4,31 @@ import { IoPerson, IoCodeSlash, IoGameController } from "react-icons/io5";
 
 import css from '@/styles/about.module.css'
 import Header from '@/components/ui/Header';
+import { useEffect, useState } from 'react';
 
 type Props = {}
 
+function isMobileDevice() {
+  return window.innerWidth < 768;
+}
+
 const About = (props: Props) => {
-  const devIconSize = 100
+
+  const mobileDevIconSize = 70
+  const defaultDevIconSize = 100
+
+  const [devIconSize, setDevIconSize] = useState(100);
+
+  useEffect(() => {
+    const onResize = () => {
+      setDevIconSize(isMobileDevice() ? mobileDevIconSize : defaultDevIconSize);
+    };
+  
+    window.addEventListener('resize', onResize);
+    onResize();
+  
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   return (
     <section id='about'>

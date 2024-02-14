@@ -18,13 +18,13 @@
 }
 
 .homeTitleContainer{
-  @apply ml-2 md:pl-6 text-5xl lg:text-7xl 2xl:text-8xl grid grid-rows-3 grid-cols-1 md:grid-cols-2;
+  @apply ml-2 md:pl-6 text-5xl lg:text-7xl 2xl:text-8xl grid grid-cols-1 md:grid-cols-2;
 }
 
 /* Typewriter ---------------------------------------------------------------- */
 
 .homeTypewriter{
-  @apply pt-6 text-2xl lg:text-3xl break-words max-w-[500px] h-44;
+  @apply pt-6 text-xl lg:text-3xl break-words max-w-[500px] h-44;
 }
 
 .homeTypewriter span{
