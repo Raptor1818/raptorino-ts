@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbarItem{
-  @apply capitalize mx-2 cursor-pointer relative;
+  @apply capitalize mx-4 cursor-pointer relative;
 }
 
 .underline {
