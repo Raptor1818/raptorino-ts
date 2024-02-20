@@ -10,15 +10,6 @@
   @apply text-xl md:text-2xl;
 }
 
-.navSectionLinks{
-  @apply gap-12 flex-row justify-between top-0 text-lg items-center py-2 px-5 h-fit
-  hidden md:flex;
-}
-
-.navSectionLinks a{
-  @apply no-underline;
-}
-
 .navSocialLinks{
   @apply text-3xl gap-4 md:gap-8 flex flex-row;
 }
