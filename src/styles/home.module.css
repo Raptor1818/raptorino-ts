@@ -14,7 +14,7 @@
 }
 
 .homeTitleTwo{
-  @apply font-bold;
+  @apply font-bold text-4xl lg:text-6xl 2xl:text-7xl;
 }
 
 .homeTitleContainer{

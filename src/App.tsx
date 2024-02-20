@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <main className={css.mainContainer}>
-        <StarsCanvas></StarsCanvas>
+        {/* <StarsCanvas></StarsCanvas> */}
         <Body></Body>
       </main>
     </>

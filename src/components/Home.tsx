@@ -14,7 +14,7 @@ const Home = (props: Props) => {
       </div>
       <div className={css.homeTitleContainer}>
         <div>
-          <h1 className={css.homeTitle}>Welcome,</h1>
+          <h1 className={css.homeTitle}>Welcome</h1>
           <h1 className={css.homeTitleTwo}>I'm Francesco</h1>
           <div className={css.homeTypewriter}>
             <TypewriterComponent stringArray={typewriterStrings}/>

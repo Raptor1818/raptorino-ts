@@ -47,7 +47,7 @@ const About = (props: Props) => {
         </div>
       </div>
       <div className={css.aboutMeLangSection}>
-        <h2>Here are tools and languages I use:</h2>
+        <h2>Tools and languages I use:</h2>
         <div className={css.aboutMeLanguages}>
           <Header 
             text='Web dev' 

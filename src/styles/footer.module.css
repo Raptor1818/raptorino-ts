@@ -4,7 +4,7 @@
 
 .footer{
   font-family: 'Nexa';
-  @apply z-10 min-w-full bottom-0 left-0 right-0 p-12 flex flex-col justify-center items-center w-full text-center font-light;
+  @apply z-10 min-w-full bottom-0 left-0 right-0 p-12 pb-4 flex flex-col justify-center items-center w-full text-center font-light;
 }
 
 p{
