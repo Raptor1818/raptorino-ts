@@ -15,8 +15,8 @@ function Navbar({}: Props) {
         <NavbarLinkMenu />
       </div>
       <div className={css.navSocialLinks}>
-        <a href="https://twitter.com/_Raptorr" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-        <a href="https://github.com/Raptor1818" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://twitter.com/_Raptorr" target="_blank" rel="noopener noreferrer" aria-label='Twitter profile'><FaXTwitter /></a>
+        <a href="https://github.com/Raptor1818" target="_blank" rel="noopener noreferrer" aria-label='Github profile'><FaGithub /></a>
       </div>
     </nav>
   )
