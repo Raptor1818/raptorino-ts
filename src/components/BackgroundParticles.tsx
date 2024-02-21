@@ -5,6 +5,8 @@ import { loadSlim } from "tsparticles-slim";
 
 import options from '@/assets/particleConfig'
 
+const particleConfig: any = options
+
 const BackgroundParticles = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
@@ -19,7 +21,7 @@ const BackgroundParticles = () => {
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
-            options={options}
+            options={particleConfig}
         />
     );
 };
