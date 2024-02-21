@@ -1,13 +1,13 @@
-import css from './App.module.css'
-import Body from './components/Body';
-import StarsCanvas from './components/StarBackground';
+import css from '@/App.module.css'
+import Body from '@/components/Body';
+import BackgroundParticles from '@/components/BackgroundParticles';
 
 function App() {
   return (
     <>
       <main className={css.mainContainer}>
-        {/* <StarsCanvas></StarsCanvas> */}
-        <Body></Body>
+        <BackgroundParticles />
+        <Body />
       </main>
     </>
   )
