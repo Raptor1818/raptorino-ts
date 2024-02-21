@@ -25,5 +25,5 @@ body{
 }
 
 section{
-  @apply min-h-screen pb-32 scroll-mt-32;
+  @apply min-h-screen pb-32 scroll-mt-32 flex flex-col justify-center items-center w-full;
 }
