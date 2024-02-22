@@ -5,6 +5,7 @@ import { IoPerson, IoCodeSlash, IoGameController } from "react-icons/io5";
 import css from '@/styles/about.module.css'
 import Header from '@/components/ui/Header';
 import { useEffect, useState } from 'react';
+import DocumentATag from './ui/DocumentATag';
 
 type Props = {}
 
@@ -35,23 +36,23 @@ const About = (props: Props) => {
       <div className={css.aboutContainer}>
         <div></div>
         <div className={css.aboutTextContainer}>
-          <Header 
-            text='About me' 
-            icon={IoPerson} />
+          <Header icon={IoPerson}>
+            About me
+          </Header>
           <p className={css.aboutParagraph}>
             Hi! I'm Francesco, an 18 year old guy from Italy with a passion for web and game development.</p>
           <p className={css.aboutParagraph}>
             I have made various webdev projects, and moving forward I will focus more on learning game development with Godot 4.</p>
-          <p className={css.aboutParagraph}><a href="#projects">
-            Check out my projects!</a></p>
+          <p className={css.aboutParagraph}>
+          <DocumentATag hrefID='projects'>Check out my projects!</DocumentATag></p>
         </div>
       </div>
       <div className={css.aboutMeLangSection}>
         <h2>Tools and languages I use:</h2>
         <div className={css.aboutMeLanguages}>
-          <Header 
-            text='Web dev' 
-            icon={IoCodeSlash} />
+          <Header icon={IoCodeSlash}>
+            Web dev
+          </Header>
           <div className={css.devIconsContainer}>
             <Html5Original size={devIconSize}/>
             <Css3Original size={devIconSize}/>
@@ -68,9 +69,9 @@ const About = (props: Props) => {
         </div>
 
         <div className={css.aboutMeLanguages}>
-          <Header 
-            text='Game dev' 
-            icon={IoGameController} />
+          <Header icon={IoGameController}>
+            Game dev
+          </Header>
           <div className={css.devIconsContainer}>
             <GodotOriginalWordmark size={devIconSize}/>
             <BlenderOriginal size={devIconSize}/>

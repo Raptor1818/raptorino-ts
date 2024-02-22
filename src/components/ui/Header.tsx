@@ -4,13 +4,13 @@ import { IconType } from 'react-icons';
 import css from '@/styles/ui/headerWithIcon.module.css'
 
 interface HeaderProps {
-  text: string;
+  children: ReactNode;
   icon: IconType;
 }
 
-const Header: React.FC<HeaderProps> = ({ text, icon: Icon }) => {
+const Header: React.FC<HeaderProps> = ({ children, icon: Icon }) => {
   return (
-    <h1 className={css.header}>{text}<Icon/></h1>
+    <h1 className={css.header}>{children}<Icon/></h1>
   );
 };
 

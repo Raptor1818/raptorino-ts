@@ -6,7 +6,7 @@ import css from '@/styles/ui/navbarLink.module.css'
 type Props = {
   link: string,
   selected: boolean,
-  onClick
+  onClick: any
 }
 
 const NavbarLink = (props: Props) => {

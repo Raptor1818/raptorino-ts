@@ -28,7 +28,9 @@ type Props = {}
 const Projects = (props: Props) => {
   return (
     <section id='projects'>
-      <Header text='My Projects' icon={IoConstruct} />
+      <Header icon={IoConstruct}>
+        My projects
+      </Header>
       <div className={css.projectsContainer}>
         {projectList.map((project) => (
           <ProjectCard
