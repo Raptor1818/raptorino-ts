@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cardTitle{
+  @apply text-3xl;
+}
+
+.cardDesc{
+  @apply text-xl;
+}
+
+.langSection{
+  @apply flex flex-row gap-2 text-4xl;
+}
