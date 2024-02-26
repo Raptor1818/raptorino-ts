@@ -16,8 +16,15 @@ function debounce(func, wait) {
   };
 }
 
+function setDocumentTitle(index: number){
+  let currentSection: string = links[index].charAt(0).toUpperCase();
+  document.title = "Raptorino | " + currentSection + links[index].slice(1);
+}
+
 const NavbarLinkMenu = () => {
   const [selected, setSelected] = useState(0);
+  
+  setDocumentTitle(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +48,7 @@ const NavbarLinkMenu = () => {
 
       if (closestSectionIndex !== -1 && closestSectionIndex !== selected) {
         setSelected(closestSectionIndex);
+        setDocumentTitle(closestSectionIndex);
       }
     };
 
@@ -61,6 +69,7 @@ const NavbarLinkMenu = () => {
             selected={selected === i}
             onClick={() => {
               setSelected(i);
+              setDocumentTitle(i);
               const element = document.getElementById(link);
               element?.scrollIntoView({
                 behavior: 'smooth',
