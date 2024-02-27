@@ -1,4 +1,3 @@
-// Import ReactElement from 'react'
 import React, { ReactElement } from 'react'; 
 import css from '@/styles/projects.module.css';
 import Header from '@/components/ui/Header';
@@ -14,7 +13,7 @@ type Project = {
   id: number;
   title: string;
   desc: string;
-  langs: ReactElement[]; // Use ReactElement[]
+  langs: ReactElement[];
 };
 
 const projectList: Project[] = [
@@ -22,9 +21,26 @@ const projectList: Project[] = [
     id: 1,
     title: 'Raptorino',
     desc: 'My personal website',
-    langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />] // Directly use JSX elements
+    langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />]
   },
-  // Additional projects...
+  {
+    id: 2,
+    title: 'Raptorino',
+    desc: 'My personal website',
+    langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />]
+  },
+  {
+    id: 3,
+    title: 'Raptorino',
+    desc: 'My personal website',
+    langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />]
+  },
+  {
+    id: 4,
+    title: 'Raptorino',
+    desc: 'My personal website',
+    langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />]
+  },
 ];
 
 const Projects = () => {
