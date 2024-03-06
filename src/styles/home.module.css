@@ -31,17 +31,3 @@
   @apply text-dark-text !important;
   font-family: 'IBM Plex Mono', monospace;
 }
-
-/* Hobby ---------------------------------------------------------------- */
-
-.hobbyTitleContainer{
-  @apply flex flex-row justify-between items-center gap-24 md:gap-48 mt-16;
-}
-
-.hobbyTitleContainer h1{
-  @apply transition text-center;
-}
-
-.hobbyTitleContainer h1:hover{
-  @apply scale-110;
-}

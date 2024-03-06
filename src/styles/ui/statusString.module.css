@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.statusDiv{
+  @apply rounded-lg p-1 text-white text-sm;
+}
+
+.statusDiv span{
+  @apply font-mono font-bold;
+}
+
+.finished{
+  @apply bg-green-600;
+}
+
+.wip{
+  @apply bg-yellow-600;
+}
+
+.onHold{
+  @apply bg-blue-600;
+}

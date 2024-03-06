@@ -17,3 +17,7 @@
 .langSection{
   @apply flex flex-row gap-2 text-4xl;
 }
+
+.titleStatusDiv{
+  @apply flex flex-row justify-between items-center;
+}
