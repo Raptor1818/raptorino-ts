@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tooltip{
-  @apply relative p-1 rounded-md hidden bg-neutral-800 text-sm mb-2;
+  @apply relative p-1 rounded-md bg-neutral-800 text-sm mb-2 transition z-50;
 }
 
 .tooltipArrow{

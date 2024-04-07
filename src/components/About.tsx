@@ -67,6 +67,7 @@ const About = (props: Props) => {
           <Header icon={IoCodeSlash}>
             Web dev
           </Header>
+
           <div className={css.devIconsContainer}>
             {webdevIconComponents.map(({ component: IconComponent, name }, index) => (
               <LangIcon text={name}>
@@ -75,11 +76,12 @@ const About = (props: Props) => {
             ))}
           </div>
         </div>
-        
+
         <div className={css.aboutMeLanguages}>
           <Header icon={IoGameController}>
             Game dev
           </Header>
+          
           <div className={css.devIconsContainer}>
             {gamedevIconComponents.map(({ component: IconComponent, name }, index) => (
               <LangIcon text={name}>

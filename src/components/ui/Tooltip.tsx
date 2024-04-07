@@ -9,21 +9,31 @@ type Props = {
 const Tooltip = (props: Props) => {
   const [show, setShow] = React.useState(false);
 
+  const handleMouseEnter = () => {
+    setShow(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShow(false);
+  };
+
   return (
     <div>
-      <div className={css.tooltip}
-          style={{ visibility: show ? 'visible' : 'hidden' }}>
+      <div
+        className={css.tooltip}
+        style={{ visibility: show ? 'visible' : 'hidden' }}
+      >
         {props.text}
         <span className={css.tooltipArrow} />
       </div>
-      <div
-        onMouseEnter={() => setShow(true)}
-        onMouseLeave={() => setShow(false)}
-      >
-        {props.children}
-      </div>
+      {React.Children.map(props.children, (child) =>
+        React.cloneElement(child as React.ReactElement<any>, {
+          onMouseEnter: handleMouseEnter,
+          onMouseLeave: handleMouseLeave,
+        })
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default Tooltip

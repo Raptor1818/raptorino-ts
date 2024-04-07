@@ -26,7 +26,7 @@
 /* dev icons ---------------------------------------------------- */
 
 .devIconsContainer{
-  @apply flex flex-row gap-2 md:gap-4 w-fit;
+  @apply flex flex-wrap flex-row justify-center items-center gap-2 md:gap-4 w-fit;
 }
 
 /* about me languages ---------------------------------------------------- */
