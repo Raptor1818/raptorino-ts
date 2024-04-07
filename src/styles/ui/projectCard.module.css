@@ -6,6 +6,10 @@
   @apply border border-white rounded-2xl p-4 flex flex-col justify-between gap-4 backdrop-blur-[2.5px];
 }
 
+.cardContainer:hover{
+  @apply scale-105;
+}
+
 .cardTitle{
   @apply text-3xl;
 }
