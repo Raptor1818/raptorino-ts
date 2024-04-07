@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import css from '@/App.module.css'
+import Body from '@/components/Body';
+import BackgroundParticles from '@/components/BackgroundParticles';
 
 function App() {
   return (
     <>
-      <div className='w-full mt-16'>
-        <h1 className='text-center text-5xl'>WIP in the <b>dev</b> branch</h1>
-      </div>
+      <main className={css.mainContainer}>
+        <BackgroundParticles />
+        <Body />
+      </main>
     </>
   )
 }

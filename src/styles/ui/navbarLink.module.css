@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbarItem{
+  @apply capitalize mx-4 cursor-pointer relative;
+}
+
+.underline {
+  @apply absolute top-[100%] left-0 w-full h-1 rounded-2xl bg-white opacity-85;
+}

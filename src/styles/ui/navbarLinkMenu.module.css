@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navSectionLinks{
+  @apply top-0 text-lg items-center h-fit
+  hidden md:grid;
+  place-items: center left;
+}
+
+.wrapper{
+  @apply flex justify-evenly;
+}

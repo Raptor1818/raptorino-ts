@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer{
+  font-family: 'Nexa';
+  @apply z-10 min-w-full bottom-0 left-0 right-0 p-12 pb-4 flex flex-col justify-center items-center w-full text-center font-light;
+}
+
+p{
+  @apply text-dark-text text-lg;
+}
+
+
+.socialsContainer{
+  @apply w-full flex-wrap;
+}
+
+.socialsContainer h3{
+  @apply text-xl md:text-2xl pb-8 font-semibold;
+}
+
+.footerLinkSection{
+  @apply grid grid-cols-3;
+}
+
+.footerLinkSection a{
+  @apply my-4 text-default-text;
+}
+
+.footerLinkDiv{
+  @apply flex flex-col justify-center items-center;
+}
+
+.footerSignature{
+  @apply flex flex-col justify-center pt-12 pb-2 gap-4;
+}
+
+.footerSignature p{
+  @apply text-sm md:text-base;
+}
+
+.headerContainer{
+  @apply flex flex-col justify-center items-center pb-4;
+}

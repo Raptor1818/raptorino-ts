@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cardContainer{
+  @apply border border-white rounded-2xl p-4 flex flex-col gap-4 backdrop-blur-[2.5px];
+}
+
+.cardTitle{
+  @apply text-3xl;
+}
+
+.cardDesc{
+  @apply text-xl;
+}
+
+.langSection{
+  @apply flex flex-row gap-2 text-4xl;
+}
+
+.titleStatusDiv{
+  @apply flex flex-row justify-between items-center;
+}

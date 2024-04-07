@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bodyContainer{
+  @apply mt-20 md:mx-auto px-12 min-h-screen;
+}

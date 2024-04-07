@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+  @apply top-0 right-0 left-0 z-50 fixed flex flex-row justify-between items-center backdrop-blur-sm h-16 w-screen px-4 md:px-10 shadow-lg shadow-[#6666EE40];
+}
+
+.logoTitle{
+  @apply text-xl md:text-2xl;
+}
+
+.navSocialLinks{
+  @apply text-3xl gap-4 md:gap-8 flex flex-row;
+}

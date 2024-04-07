@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aboutContainer{
+  /* @apply grid md:grid-cols-2; */
+  @apply flex flex-col justify-center items-center;
+}
+
+.aboutContainer *{
+  @apply h-fit;
+}
+
+.aboutTextContainer{
+  @apply md:p-8 flex flex-col gap-4;
+}
+
+.aboutTitle{
+  @apply text-4xl lg:text-6xl 2xl:text-7xl font-[800] flex flex-row gap-4;
+}
+
+.aboutParagraph{
+  @apply text-lg md:text-xl max-w-[800px];
+}
+
+/* dev icons ---------------------------------------------------- */
+
+.devIconsContainer{
+  @apply flex flex-row gap-2 md:gap-4 w-fit;
+}
+
+/* about me languages ---------------------------------------------------- */
+
+
+.aboutMeLangSection{
+  @apply w-full mt-28 text-center gap-16 flex flex-col justify-center items-center;
+}
+
+.aboutMeLangSection h2{
+  @apply text-3xl md:text-4xl;
+}
+
+.aboutMeLanguages{
+  @apply flex flex-col justify-center items-center text-center gap-8;
+}
