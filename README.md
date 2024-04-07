@@ -1,2 +1,4 @@
-# raptorino-ts
- A newer, more personal version of my website.
+# https://www.raptorino.com/
+My personal website.
+
+v2.0.2
