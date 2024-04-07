@@ -13,3 +13,11 @@
 .navSocialLinks{
   @apply text-3xl gap-4 md:gap-8 flex flex-row;
 }
+
+.version{
+  @apply text-sm text-dark-text font-mono pt-6;
+}
+
+.titleVersionContainer{
+  @apply flex flex-row items-center justify-center gap-1 h-full;
+}
