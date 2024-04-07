@@ -42,7 +42,7 @@ const Footer = () => {
       <div className={css.footerSignature}>
         <div>
           <p>Made with React, Typescript, Tailwind and Framer Motion.</p>
-          <p>Hand crafted with love.</p>
+          <p>Hand crafted with love. ❤️</p>
         </div>
         <p>© {currentYear} | All rights reserved.</p>
       </div>

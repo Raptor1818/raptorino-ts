@@ -36,6 +36,10 @@ p{
   @apply flex flex-col justify-center pt-12 pb-2 gap-4;
 }
 
+.footerSignature p{
+  @apply text-sm md:text-base;
+}
+
 .headerContainer{
   @apply flex flex-col justify-center items-center pb-4;
 }
