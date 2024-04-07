@@ -10,7 +10,10 @@ type Props = {}
 function Navbar({}: Props) {
   return (
     <nav className={css.navbar}>
-      <h1 className={css.logoTitle}>Raptorino</h1>
+      <div className={css.titleVersionContainer}>
+        <h1 className={css.logoTitle}>Raptorino</h1>
+        <span className={css.version}>2.0.3</span>
+      </div>
       <div className={css.navSectionLinks}>
         <NavbarLinkMenu />
       </div>
