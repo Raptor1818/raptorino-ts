@@ -12,7 +12,8 @@ const DocumentATag = (props: Props) => {
       element?.scrollIntoView({
         behavior: 'smooth',
       });
-    }}>
+    }}
+    className='underline'>
       {props.children}
     </a>
   )

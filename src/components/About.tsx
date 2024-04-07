@@ -34,7 +34,6 @@ const About = (props: Props) => {
   return (
     <section id='about'>
       <div className={css.aboutContainer}>
-        <div></div>
         <div className={css.aboutTextContainer}>
           <Header icon={IoPerson}>
             About me
