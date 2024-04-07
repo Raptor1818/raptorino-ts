@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .cardContainer{
-  @apply border border-white rounded-2xl p-4 flex flex-col gap-4;
+  @apply border border-white rounded-2xl p-4 flex flex-col gap-4 backdrop-blur-[2.5px];
 }
 
 .cardTitle{

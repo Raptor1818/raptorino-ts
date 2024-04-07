@@ -11,13 +11,18 @@ import {
   SiElectron
 } from 'react-icons/si';
 
+import raptorino_img from '@/assets/img/raptorino_img.webp'
+import barCalc_img from '@/assets/img/barCalc_img.webp'
+import cat_wip_img from '@/assets/img/cat_wip_img.webp'
+
 type Project = {
   id: number;
   title: string;
-  status: number; // 0: Finished, 1: WIP, 2: On hold
+  status: number; //0: Finished, 1: WIP, 2: On hold, 3
   desc: string;
   langs: ReactElement[];
   link: string;
+  image: any;
 };
 
 const projectList: Project[] = [
@@ -27,7 +32,8 @@ const projectList: Project[] = [
     status: 0,
     desc: 'My personal website',
     langs: [<SiReact />, <SiTypescript />, <SiTailwindcss />],
-    link: "https://github.com/Raptor1818/raptorino-ts"
+    link: "https://github.com/Raptor1818/raptorino-ts",
+    image: raptorino_img,
   },
   {
     id: 2,
@@ -35,17 +41,28 @@ const projectList: Project[] = [
     status: 0,
     desc: 'Webapp for my school to create order messages for the bar with ease.',
     langs: [<SiReact />, <SiJavascript />, <SiTailwindcss />],
-    link: "https://github.com/Raptor1818/bar-calculator"
+    link: "https://github.com/Raptor1818/bar-calculator",
+    image: barCalc_img,
   },
   {
     id: 3,
-    title: 'Streamino',
-    status: 2,
-    desc: 'Streamino is a locally-run webapp application that organizes your media all in one library.',
-    langs: [<SiElectron/>, <SiReact />, <SiTypescript />, <SiTailwindcss />],
-    link: "https://github.com/Raptor1818/Streamino"
+    title: 'WIP',
+    status: 1,
+    desc: 'Let me cook 👨‍🍳',
+    langs: [],
+    link: "https://github.com/Raptor1818/",
+    image: cat_wip_img,
   }
 ];
+
+// {
+//   id: ,
+//   title: '',
+//   status: ,
+//   desc: '',
+//   langs: [<SiElectron/>, <SiReact />, <SiTypescript />, <SiTailwindcss />],
+//   link: "https://github.com/Raptor1818/"
+// }
 
 const Projects = () => {
   return (
@@ -60,6 +77,7 @@ const Projects = () => {
             desc={project.desc}
             langs={project.langs}
             link={project.link}
+            image={project.image}
           />
         ))}
       </div>

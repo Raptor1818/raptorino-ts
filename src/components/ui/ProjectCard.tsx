@@ -8,13 +8,13 @@ type Props = {
   desc: string,
   langs: ReactElement[],
   link: string;
+  image: any;
 }
 
 const ProjectCard = (props: Props) => {
   return (
     <div className={css.cardContainer}>
-      {/* <img src="" alt="" /> */}
-      <div className='w-[355px] h-[200px] bg-white'></div>
+      <img src={props.image} alt={props.title} />
       <div>
         <div className={css.titleStatusDiv}>
           <h3 className={css.cardTitle}>
