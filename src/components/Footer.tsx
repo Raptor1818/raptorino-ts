@@ -8,8 +8,10 @@ import {
   FaRedditAlien,
   FaItchIo,
   FaYoutube,
+  FaLink
 } from 'react-icons/fa6';
 import FooterLink from '@/components/ui/FooterLink';
+import Header from '@/components/ui/Header';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +28,11 @@ const Footer = () => {
   return (
     <footer className={css.footer} id='links'>
       <div className={css.socialsContainer}>
-        <h3>My socials</h3>
+        <div className={css.headerContainer}>
+          <Header icon={FaLink}>
+            Links
+          </Header>
+        </div>
         <div className={css.footerLinkSection}>
           {socials.map((social, index) => (
             <FooterLink key={index} text={social.name} link={social.link} icon={social.icon} />

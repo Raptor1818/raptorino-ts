@@ -35,3 +35,7 @@ p{
 .footerSignature{
   @apply flex flex-col justify-center pt-12 pb-2 gap-4;
 }
+
+.headerContainer{
+  @apply flex flex-col justify-center items-center pb-4;
+}
