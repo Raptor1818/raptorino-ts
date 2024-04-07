@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip{
+  @apply relative p-1 rounded-md bg-neutral-800 text-sm mb-2 transition z-50;
+}
+
+.tooltipArrow{
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 5px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(38 38 38) transparent transparent;
+}

@@ -6,6 +6,7 @@ import css from '@/styles/about.module.css'
 import Header from '@/components/ui/Header';
 import { useEffect, useState } from 'react';
 import DocumentATag from './ui/DocumentATag';
+import LangIcon from './ui/LangIcon';
 
 type Props = {}
 
@@ -14,7 +15,6 @@ function isMobileDevice() {
 }
 
 const About = (props: Props) => {
-
   const mobileDevIconSize = 70
   const defaultDevIconSize = 100
 
@@ -30,6 +30,21 @@ const About = (props: Props) => {
   
     return () => window.removeEventListener('resize', onResize);
   }, []);
+
+  const webdevIconComponents = [
+    { component: Html5Original, name: 'HTML5' },
+    { component: Css3Original, name: 'CSS3' },
+    { component: JavascriptOriginal, name: 'JavaScript' },
+    { component: TypescriptOriginal, name: 'TypeScript' },
+    { component: TailwindcssOriginal, name: 'Tailwind' },
+    { component: ReactOriginal, name: 'React' },
+    { component: ElectronOriginal, name: 'Electron' }
+  ];
+
+  const gamedevIconComponents = [
+    { component: BlenderOriginal, name: 'Blender' },
+    { component: GodotOriginalWordmark, name: 'Godot'}
+  ]
 
   return (
     <section id='about'>
@@ -52,28 +67,27 @@ const About = (props: Props) => {
           <Header icon={IoCodeSlash}>
             Web dev
           </Header>
-          <div className={css.devIconsContainer}>
-            <Html5Original size={devIconSize}/>
-            <Css3Original size={devIconSize}/>
-            <JavascriptOriginal size={devIconSize}/>
-            <TypescriptOriginal size={devIconSize}/>
-          </div>
 
           <div className={css.devIconsContainer}>
-            <TailwindcssOriginal size={devIconSize}/>
-            <ReactOriginal size={devIconSize}/>
-            <ElectronOriginal size={devIconSize}/>
+            {webdevIconComponents.map(({ component: IconComponent, name }, index) => (
+              <LangIcon text={name}>
+                <IconComponent key={index} size={devIconSize} />
+              </LangIcon>
+            ))}
           </div>
-
         </div>
 
         <div className={css.aboutMeLanguages}>
           <Header icon={IoGameController}>
             Game dev
           </Header>
+          
           <div className={css.devIconsContainer}>
-            <GodotOriginalWordmark size={devIconSize}/>
-            <BlenderOriginal size={devIconSize}/>
+            {gamedevIconComponents.map(({ component: IconComponent, name }, index) => (
+              <LangIcon text={name}>
+                <IconComponent key={index} size={devIconSize} />
+              </LangIcon>
+            ))}
           </div>
         </div>
 
