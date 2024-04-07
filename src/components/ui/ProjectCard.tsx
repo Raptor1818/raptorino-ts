@@ -13,23 +13,23 @@ type Props = {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className={css.cardContainer}>
-      <img src={props.image} alt={props.title} />
-      <div>
-        <div className={css.titleStatusDiv}>
-          <h3 className={css.cardTitle}>
-            {props.title}</h3>
-          <StatusString status={props.status} />
+    <a href={props.link} target="_blank" rel="noopener noreferrer" className={css.cardContainer}>
+        <div>
+          <img src={props.image} alt={props.title} />
+          <div className={css.titleStatusDiv}>
+            <h3 className={css.cardTitle}>
+              {props.title}</h3>
+            <StatusString status={props.status} />
+          </div>
+          <p className={css.cardDesc}>
+            {props.desc}</p>
         </div>
-        <p className={css.cardDesc}>
-          {props.desc}</p>
-      </div>
-      <div className={css.langSection}>
-        {props.langs.map((icon, index) => (
-          React.cloneElement(icon, { key: index })
-        ))}
-      </div>
-    </div>
+        <div className={css.langSection}>
+          {props.langs.map((icon, index) => (
+            React.cloneElement(icon, { key: index })
+          ))}
+        </div>
+    </a>
   )
 }
 
