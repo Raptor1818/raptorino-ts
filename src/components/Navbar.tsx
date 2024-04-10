@@ -12,7 +12,7 @@ function Navbar({}: Props) {
     <nav className={css.navbar}>
       <div className={css.titleVersionContainer}>
         <h1 className={css.logoTitle}>Raptorino</h1>
-        <span className={css.version}>2.0.3</span>
+        <span className={css.version}>2.0.3a</span>
       </div>
       <div className={css.navSectionLinks}>
         <NavbarLinkMenu />
