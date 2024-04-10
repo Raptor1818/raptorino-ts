@@ -23,8 +23,6 @@ function setDocumentTitle(index: number){
 
 const NavbarLinkMenu = () => {
   const [selected, setSelected] = useState(0);
-  
-  setDocumentTitle(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,6 +56,10 @@ const NavbarLinkMenu = () => {
 
     return () => window.removeEventListener('scroll', debouncedHandleScroll);
   }, [selected]);
+
+  useEffect(() => {
+    setDocumentTitle(0);
+  }, []);
 
   return (
     <div className={css.navSectionLinks}>
