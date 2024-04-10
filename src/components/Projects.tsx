@@ -8,12 +8,15 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiJavascript,
-  SiElectron
+  SiElectron,
+  SiGodotengine,
+  SiAseprite 
 } from 'react-icons/si';
 
 import raptorino_img from '@/assets/img/raptorino_img.webp'
-import barCalc_img from '@/assets/img/barCalc_img.webp'
+// import barCalc_img from '@/assets/img/barCalc_img.webp'
 import cat_wip_img from '@/assets/img/cat_wip_img.webp'
+import the_grove_img from '@/assets/img/the_grove_img.webp'
 
 type Project = {
   id: number;
@@ -37,12 +40,12 @@ const projectList: Project[] = [
   },
   {
     id: 2,
-    title: 'Order calculator',
+    title: 'The Grove',
     status: 0,
-    desc: 'Webapp for my school to create order messages for the bar with ease.',
-    langs: [<SiReact />, <SiJavascript />, <SiTailwindcss />],
-    link: "https://github.com/Raptor1818/bar-calculator",
-    image: barCalc_img,
+    desc: 'A 2D Platformer prototype for The PirateSoftware 14th game jam',
+    langs: [<SiGodotengine />, <SiAseprite />],
+    link: "https://dano972c.itch.io/the-grove",
+    image: the_grove_img,
   },
   {
     id: 3,
@@ -55,6 +58,15 @@ const projectList: Project[] = [
   }
 ];
 
+// {
+//   id: 2,
+//   title: 'Order calculator',
+//   status: 0,
+//   desc: 'Webapp for my school to create order messages for the bar with ease.',
+//   langs: [<SiReact />, <SiJavascript />, <SiTailwindcss />],
+//   link: "https://github.com/Raptor1818/bar-calculator",
+//   image: barCalc_img,
+// },
 // {
 //   id: ,
 //   title: '',
