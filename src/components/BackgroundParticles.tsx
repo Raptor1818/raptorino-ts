@@ -28,6 +28,7 @@ const BackgroundParticles = () => {
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={particleConfig}
+            className="-z-50"
             />
         );
     }
