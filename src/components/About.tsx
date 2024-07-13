@@ -1,8 +1,8 @@
-import { ReactOriginal, JavascriptOriginal, GodotOriginalWordmark,TypescriptOriginal, ElectronOriginal, Html5Original, Css3Original, TailwindcssOriginal, BlenderOriginal } from 'devicons-react';
+import { ReactOriginal, JavascriptOriginal, GodotOriginalWordmark, TypescriptOriginal, ElectronOriginal, Html5Original, Css3Original, TailwindcssOriginal, BlenderOriginal } from 'devicons-react';
 
 import { IoPerson, IoCodeSlash, IoGameController } from "react-icons/io5";
 
-import css from '@/styles/about.module.css'
+import css from '@/styles/about.module.css';
 import Header from '@/components/ui/Header';
 import { useEffect, useState } from 'react';
 import DocumentATag from './ui/DocumentATag';
@@ -15,8 +15,8 @@ function isMobileDevice() {
 }
 
 const About = (props: Props) => {
-  const mobileDevIconSize = 70
-  const defaultDevIconSize = 100
+  const mobileDevIconSize = 70;
+  const defaultDevIconSize = 100;
 
   const [devIconSize, setDevIconSize] = useState(100);
 
@@ -70,8 +70,8 @@ const About = (props: Props) => {
 
           <div className={css.devIconsContainer}>
             {webdevIconComponents.map(({ component: IconComponent, name }, index) => (
-              <LangIcon text={name}>
-                <IconComponent key={index} size={devIconSize} />
+              <LangIcon key={index} text={name}>
+                <IconComponent size={devIconSize} />
               </LangIcon>
             ))}
           </div>
@@ -84,8 +84,8 @@ const About = (props: Props) => {
           
           <div className={css.devIconsContainer}>
             {gamedevIconComponents.map(({ component: IconComponent, name }, index) => (
-              <LangIcon text={name}>
-                <IconComponent key={index} size={devIconSize} />
+              <LangIcon key={index} text={name}>
+                <IconComponent size={devIconSize} />
               </LangIcon>
             ))}
           </div>
