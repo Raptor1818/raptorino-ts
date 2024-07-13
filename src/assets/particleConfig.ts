@@ -27,7 +27,7 @@ const options: ISourceOptions = {
   "delay": 0,
   "fullScreen": {
     "enable": true,
-    "zIndex": -1
+    "zIndex": -100
   },
   "detectRetina": true,
   "duration": 0,
