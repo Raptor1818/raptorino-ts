@@ -1,4 +1,4 @@
-# Remake is in progress in https://github.com/Raptor1818/raptorino-next
+# Remake is in progress in https://github.com/Raptor1818/RaptorOS
 
 # https://www.raptorino.com/
 My personal website.
